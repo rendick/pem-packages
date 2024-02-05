@@ -1,0 +1,24 @@
+#!/bin/bash
+
+DISCORD_URL="https://discord.com/api/download?platform=linux&format=tar.gz"
+
+INSTALL_DIR="/opt/discord"
+
+wget -O discord.tar.gz "$DISCORD_URL"
+tar -xvzf discord.tar.gz
+
+sudo mv discord "$INSTALL_DIR"
+
+sudo ln -s "$INSTALL_DIR/Discord" /usr/local/bin/discord
+
+echo "[Desktop Entry]
+Name=Discord
+Exec=$INSTALL_DIR/Discord
+Icon=$INSTALL_DIR/discord.png
+Type=Application
+Categories=Network;" | sudo tee /usr/share/applications/discord.desktop
+
+rm discord.tar.gz
+
+echo "Discord has been successfully installed!"
+
