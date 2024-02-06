@@ -1,20 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pem packages</title>
+	<meta charset="UTF-8" />
+	<title>Package Execution Manager</title>
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
-<body>
 
-<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-
-<ul id="myMenu">
-  <li><a href="./packages/zsh.html">1. zsh</a></li>
-  <li><a href="./packages/micro.html">2. micro</a></li>
-</ul>
-
-<script src="./main.js"></script>
-
+<body class="ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject">
+	<div id="mw-page-base" class="noprint"></div>
+	<div id="mw-head-base" class="noprint"></div>
+	<div id="content" class="mw-body" role="main">
+		<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"></div>
+		<div class="mw-indicators mw-body-content">
+		</div>
+		<h1 id="firstHeading" class="firstHeading" lang="en">Packages</h1>
+		<div id="bodyContent" class="mw-body-content">
+			<ul id="myMenu">
+				<li><a href="./packages/zsh.html">1. zsh</a></li>
+				<li><a href="./packages/micro.html">2. micro</a></li>
+				<li><a href="./packages/discord.html">3. discord</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mw-navigation">
+		<div id="mw-head">
+			<div id="left-navigation">
+				<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs"
+					aria-labelledby="p-namespaces-label" role="navigation">
+					<div class="body vector-menu-content">
+						<ul class="vector-menu-content-list">
+							<li id="ca-nstab-main" class="selected"><a href="index.html"
+									title="View the content page">Packages</a></li>
+							<li id="ca-talk"><a href="http://github.com/rendick/pem" rel="discussion">Git</a></li>
+						</ul>
+					</div>
+				</nav>
+				<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu"
+					aria-labelledby="p-variants-label" role="navigation">
+					<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox"
+						aria-labelledby="p-variants-label" />
+					<div class="body vector-menu-content">
+						<ul class="menu vector-menu-content-list"></ul>
+					</div>
+				</nav>
+			</div>
+			<div id="right-navigation">
+				<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label"
+					role="navigation">
+					<div class="body vector-menu-content">
+						<ul class="vector-menu-content-list">
+							<li id="ca-view" class="collapsible selected"><a href="./index.html">Read</a></li>
+							<li id="ca-viewsource" class="collapsible"><a
+									href="https://github.com/rendick/pem-packages/blob/main/index.html"
+									title="You can view its source">View
+									source</a></li>
+							<li id="ca-history" class="collapsible"><a
+									href="https://github.com/rendick/pem-packages/commits/main/"
+									title="Past revisions of this page">View history</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div id="p-search" role="search">
+					<form id="searchform">
+						<div id="simpleSearch">
+							<input type="text" name="search" id="mySearch" onkeyup="myFunction()" placeholder="Search for a package"
+								title="Search" id="searchInput" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="mw-panel">
+			<div id="p-logo" role="banner">
+				<a title="Visit the main page" class="mw-wiki-logo" href=""><img class="logo"
+						src="./images/logo.png"></a>
+			</div>
+			<nav id="p-navigation" class="vector-menu vector-menu-portal portal portal-first"
+				aria-labelledby="p-navigation-label" role="navigation">
+				<div class="body vector-menu-content">
+					<ul class="vector-menu-content-list">
+						<li id="n-mainpage"><a href="./index.html" title="Visit the main page">PEM</a>
+						</li>
+						<li id="n-portal"><a href="https://github.com/rendick/pem-packages" title="Wiki (soon)">Wiki
+								(soon)</a></li>
+						<li id="n-recentchanges"><a href="https://github.com/rendick/pem-packages/commits/main/"
+								title="A list of recent changes">Recent changes</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation">
+				<h3 id="p-tb-label">
+					<span>Tools</span>
+				</h3>
+				<div class="body vector-menu-content">
+					<ul class="vector-menu-content-list">
+						<li id="t-whatlinkshere"><a href="https://github.com/rendick/pem"
+								title="repository">Repository</a>
+						</li>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<footer id="footer" class="mw-footer" role="contentinfo">
+		<ul id="footer-info">
+			<li id="footer-info-lastmod"> This page was last edited on 06 February 2024, at 10:30.</li>
+		</ul>
+		<ul id="footer-places">
+			<li id="footer-places-about"><a href="./index.html">About PEM</a>
+			</li>
+		</ul>
+		<ul id="footer-icons" class="noprint">
+			<li id="footer-poweredbyico"><a href="./index.html"><img alt="PEM" width="88" height="31" loading="lazy" /></a></li>
+		</ul>
+	</footer>
+	<script src="./main.js"></script>
 </body>
+
 </html>
